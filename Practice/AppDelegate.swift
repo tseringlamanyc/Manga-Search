@@ -13,6 +13,8 @@ import AVFoundation
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var audioPlayer = AVAudioPlayer()
+    var duration = TimeInterval()
+    
 
     func playSound(file:String, ext:String) -> Void {
         do {
@@ -20,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
             audioPlayer.prepareToPlay()
             audioPlayer.play()
+            audioPlayer.currentTime = 1.8
         } catch {
             fatalError()
         }
