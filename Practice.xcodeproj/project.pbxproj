@@ -19,6 +19,8 @@
 		5242EA3123B2CA9B000B7E39 /* AlertFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2D23B2CA9B000B7E39 /* AlertFile.swift */; };
 		5242EA3223B2CA9B000B7E39 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2E23B2CA9B000B7E39 /* URLSession.swift */; };
 		5242EA3323B2CA9B000B7E39 /* ImageExtension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2F23B2CA9B000B7E39 /* ImageExtension .swift */; };
+		5242EA3623B2D0C3000B7E39 /* Champions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA3523B2D0C3000B7E39 /* Champions.swift */; };
+		5242EA3923B2D0DC000B7E39 /* LeagueAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA3823B2D0DC000B7E39 /* LeagueAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		5242EA2D23B2CA9B000B7E39 /* AlertFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertFile.swift; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/AlertFile.swift"; sourceTree = "<group>"; };
 		5242EA2E23B2CA9B000B7E39 /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLSession.swift; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/URLSession.swift"; sourceTree = "<group>"; };
 		5242EA2F23B2CA9B000B7E39 /* ImageExtension .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ImageExtension .swift"; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/ImageExtension .swift"; sourceTree = "<group>"; };
+		5242EA3523B2D0C3000B7E39 /* Champions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champions.swift; sourceTree = "<group>"; };
+		5242EA3823B2D0DC000B7E39 /* LeagueAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 		5202C60A23B2C200005AA3F1 = {
 			isa = PBXGroup;
 			children = (
+				5242EA3723B2D0CA000B7E39 /* APIClient */,
+				5242EA3423B2CE6A000B7E39 /* Models */,
 				5242EA2A23B2CA34000B7E39 /* Helpers */,
 				5202C62D23B2C2EC005AA3F1 /* Sounds */,
 				5202C61523B2C200005AA3F1 /* Practice */,
@@ -108,6 +114,22 @@
 				5242EA2E23B2CA9B000B7E39 /* URLSession.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5242EA3423B2CE6A000B7E39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5242EA3523B2D0C3000B7E39 /* Champions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5242EA3723B2D0CA000B7E39 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				5242EA3823B2D0DC000B7E39 /* LeagueAPI.swift */,
+			);
+			path = APIClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,10 +204,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5242EA3923B2D0DC000B7E39 /* LeagueAPI.swift in Sources */,
 				5242EA3023B2CA9B000B7E39 /* AppError.swift in Sources */,
 				5202C61B23B2C200005AA3F1 /* ViewController.swift in Sources */,
 				5242EA3223B2CA9B000B7E39 /* URLSession.swift in Sources */,
 				5242EA3323B2CA9B000B7E39 /* ImageExtension .swift in Sources */,
+				5242EA3623B2D0C3000B7E39 /* Champions.swift in Sources */,
 				5202C61723B2C200005AA3F1 /* AppDelegate.swift in Sources */,
 				5242EA3123B2CA9B000B7E39 /* AlertFile.swift in Sources */,
 				5202C61923B2C200005AA3F1 /* SceneDelegate.swift in Sources */,
