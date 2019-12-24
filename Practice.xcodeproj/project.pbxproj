@@ -15,6 +15,10 @@
 		5202C62323B2C200005AA3F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5202C62123B2C200005AA3F1 /* LaunchScreen.storyboard */; };
 		5202C62C23B2C245005AA3F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5202C62B23B2C245005AA3F1 /* AVFoundation.framework */; };
 		5202C62F23B2C2FE005AA3F1 /* joker_laugh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5202C62E23B2C2FE005AA3F1 /* joker_laugh.mp3 */; };
+		5242EA3023B2CA9B000B7E39 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2C23B2CA9B000B7E39 /* AppError.swift */; };
+		5242EA3123B2CA9B000B7E39 /* AlertFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2D23B2CA9B000B7E39 /* AlertFile.swift */; };
+		5242EA3223B2CA9B000B7E39 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2E23B2CA9B000B7E39 /* URLSession.swift */; };
+		5242EA3323B2CA9B000B7E39 /* ImageExtension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2F23B2CA9B000B7E39 /* ImageExtension .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		5202C62423B2C200005AA3F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5202C62B23B2C245005AA3F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		5202C62E23B2C2FE005AA3F1 /* joker_laugh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = joker_laugh.mp3; path = ../../Images/joker_laugh.mp3; sourceTree = "<group>"; };
+		5242EA2C23B2CA9B000B7E39 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppError.swift; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/AppError.swift"; sourceTree = "<group>"; };
+		5242EA2D23B2CA9B000B7E39 /* AlertFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertFile.swift; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/AlertFile.swift"; sourceTree = "<group>"; };
+		5242EA2E23B2CA9B000B7E39 /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLSession.swift; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/URLSession.swift"; sourceTree = "<group>"; };
+		5242EA2F23B2CA9B000B7E39 /* ImageExtension .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ImageExtension .swift"; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/ImageExtension .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 		5202C60A23B2C200005AA3F1 = {
 			isa = PBXGroup;
 			children = (
+				5242EA2A23B2CA34000B7E39 /* Helpers */,
 				5202C62D23B2C2EC005AA3F1 /* Sounds */,
 				5202C61523B2C200005AA3F1 /* Practice */,
 				5202C61423B2C200005AA3F1 /* Products */,
@@ -88,6 +97,17 @@
 				5202C62E23B2C2FE005AA3F1 /* joker_laugh.mp3 */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		5242EA2A23B2CA34000B7E39 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5242EA2D23B2CA9B000B7E39 /* AlertFile.swift */,
+				5242EA2C23B2CA9B000B7E39 /* AppError.swift */,
+				5242EA2F23B2CA9B000B7E39 /* ImageExtension .swift */,
+				5242EA2E23B2CA9B000B7E39 /* URLSession.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5242EA3023B2CA9B000B7E39 /* AppError.swift in Sources */,
 				5202C61B23B2C200005AA3F1 /* ViewController.swift in Sources */,
+				5242EA3223B2CA9B000B7E39 /* URLSession.swift in Sources */,
+				5242EA3323B2CA9B000B7E39 /* ImageExtension .swift in Sources */,
 				5202C61723B2C200005AA3F1 /* AppDelegate.swift in Sources */,
+				5242EA3123B2CA9B000B7E39 /* AlertFile.swift in Sources */,
 				5202C61923B2C200005AA3F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
