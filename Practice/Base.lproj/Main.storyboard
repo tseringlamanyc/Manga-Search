@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PIi-XA-qVo">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e13-pN-X8b">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e13-pN-X8b">
+                                <rect key="frame" x="0.0" y="144" width="414" height="752"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JtX-h2-lll">
                                     <size key="itemSize" width="336" height="727"/>
@@ -28,20 +27,20 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="narutoCell" id="TG7-2O-3mb" customClass="NinjasCell" customModule="Practice" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="40.5" width="336" height="727"/>
+                                        <rect key="frame" x="0.0" y="-4.5" width="336" height="727"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="J4M-Sb-DV0">
                                             <rect key="frame" x="0.0" y="0.0" width="336" height="727"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="chn-7d-xF7">
-                                                    <rect key="frame" x="0.0" y="0.0" width="336" height="629"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="336" height="622.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="336" id="y3Z-xQ-P2f"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmE-IK-n31">
-                                                    <rect key="frame" x="147" y="653" width="42" height="21"/>
+                                                    <rect key="frame" x="20" y="646.5" width="296" height="27.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -61,27 +60,37 @@
                                         <connections>
                                             <outlet property="narutoImage" destination="chn-7d-xF7" id="5at-9l-KpD"/>
                                             <outlet property="ninjasName" destination="zmE-IK-n31" id="5lX-MG-fHg"/>
+                                            <segue destination="Gaf-nR-Vf7" kind="show" id="Km2-hR-FyO"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hU6-Bx-ajC">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="IP7-my-yWT">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="e13-pN-X8b" firstAttribute="top" secondItem="IP7-my-yWT" secondAttribute="bottom" id="Edu-Go-0lQ"/>
+                            <constraint firstItem="IP7-my-yWT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XNi-7K-MTB"/>
+                            <constraint firstItem="IP7-my-yWT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Yxr-KI-5Cd"/>
+                            <constraint firstItem="IP7-my-yWT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Yyx-7U-Vet"/>
+                            <constraint firstAttribute="bottom" secondItem="e13-pN-X8b" secondAttribute="bottom" id="bT7-cw-M4y"/>
+                            <constraint firstItem="e13-pN-X8b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oUO-lG-ztv"/>
+                            <constraint firstItem="e13-pN-X8b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zIe-Xm-faF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="D9V-hz-mjd"/>
                     <connections>
                         <outlet property="narutoCV" destination="e13-pN-X8b" id="lsu-U2-aw7"/>
-                        <outlet property="narutoSearch" destination="hU6-Bx-ajC" id="RZQ-m7-dJF"/>
+                        <outlet property="narutoSearch" destination="IP7-my-yWT" id="bXg-0h-vw7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="133.92857142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7d5-Ou-Mtu">
@@ -93,10 +102,29 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="v5S-zi-ROL"/>
                     </view>
+                    <navigationItem key="navigationItem" id="N2Y-OM-U5b"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gln-66-0pI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="979" y="131"/>
+            <point key="canvasLocation" x="1888.4057971014495" y="130.58035714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WjV-Yf-i4P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PIi-XA-qVo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2YD-7Q-SvK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="k4a-KP-1cV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oq3-6f-c97" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
         </scene>
     </scenes>
 </document>

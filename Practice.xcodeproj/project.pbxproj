@@ -22,7 +22,7 @@
 		5242EA3223B2CA9B000B7E39 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2E23B2CA9B000B7E39 /* URLSession.swift */; };
 		5242EA3323B2CA9B000B7E39 /* ImageExtension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2F23B2CA9B000B7E39 /* ImageExtension .swift */; };
 		5242EA3623B2D0C3000B7E39 /* Naruto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA3523B2D0C3000B7E39 /* Naruto.swift */; };
-		5242EA3923B2D0DC000B7E39 /* NarutoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA3823B2D0DC000B7E39 /* NarutoAPI.swift */; };
+		5242EA3923B2D0DC000B7E39 /* mangaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA3823B2D0DC000B7E39 /* mangaAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,7 @@
 		5242EA2E23B2CA9B000B7E39 /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLSession.swift; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/URLSession.swift"; sourceTree = "<group>"; };
 		5242EA2F23B2CA9B000B7E39 /* ImageExtension .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ImageExtension .swift"; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/ImageExtension .swift"; sourceTree = "<group>"; };
 		5242EA3523B2D0C3000B7E39 /* Naruto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Naruto.swift; sourceTree = "<group>"; };
-		5242EA3823B2D0DC000B7E39 /* NarutoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarutoAPI.swift; sourceTree = "<group>"; };
+		5242EA3823B2D0DC000B7E39 /* mangaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mangaAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +141,7 @@
 		5242EA3723B2D0CA000B7E39 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
-				5242EA3823B2D0DC000B7E39 /* NarutoAPI.swift */,
+				5242EA3823B2D0DC000B7E39 /* mangaAPI.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5242EA3923B2D0DC000B7E39 /* NarutoAPI.swift in Sources */,
+				5242EA3923B2D0DC000B7E39 /* mangaAPI.swift in Sources */,
 				5242EA3023B2CA9B000B7E39 /* AppError.swift in Sources */,
 				5202C61B23B2C200005AA3F1 /* ViewController.swift in Sources */,
 				5242EA3223B2CA9B000B7E39 /* URLSession.swift in Sources */,

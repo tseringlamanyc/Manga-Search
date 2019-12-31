@@ -35,19 +35,32 @@ class ViewController: UIViewController {
         }
     }
     
-    var currentSearch = ""
+    var currentManga = "11" {
+        didSet {
+            mangaAPI.getMangas(mangaNum: Int(currentManga) ?? 11) { (result) in
+                switch result {
+                case .failure(let appError):
+                    print("\(appError)")
+                case .success(let mangas):
+                    DispatchQueue.main.async {
+                        self.ninjas = mangas
+                    }
+                }
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
+        loadData(userNum: Int(currentManga)!)
+        narutoSearch.delegate = self
         narutoCV.delegate = self
-        narutoSearch.delegate = self 
         narutoCV.dataSource = self
         playSound(file: "opening", ext: "mp3")
     }
     
-    func loadData() {
-        NarutoAPI.getNinjas { [weak self] (result) in
+    func loadData(userNum: Int) {
+        mangaAPI.getMangas(mangaNum: userNum) { [weak self] (result) in
             switch result {
             case .failure(let appError):
                 print("\(appError)")
@@ -95,7 +108,12 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 }
 
 extension ViewController: UISearchBarDelegate {
-    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchBar.resignFirstResponder()
+        currentManga = searchBar.text!
+    }
 }
+
+
 
 

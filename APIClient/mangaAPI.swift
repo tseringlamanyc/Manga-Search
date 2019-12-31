@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct NarutoAPI {
+struct mangaAPI {
     
-    static func getNinjas(completionHandler: @escaping (Result<[Ninjas], AppError>) -> () ) {
+    static func getMangas(mangaNum: Int, completionHandler: @escaping (Result<[Ninjas], AppError>) -> () ) {
         
-        let narutoEndpoint = "https://api.jikan.moe/v3/manga/11/characters"
+        let narutoEndpoint = "https://api.jikan.moe/v3/manga/\(mangaNum)/characters"
         
         guard let url = URL(string: narutoEndpoint) else {
             completionHandler(.failure(.badURL(narutoEndpoint)))
