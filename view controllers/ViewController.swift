@@ -14,13 +14,16 @@ class ViewController: UIViewController {
 
     var ninjas = [Ninjas]() {
         didSet {
-            narutoCV.reloadData()
+            DispatchQueue.main.async {
+                self.narutoCV.reloadData()
+            }
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
+        narutoCV.delegate = self
         narutoCV.dataSource = self
     }
     
@@ -46,19 +49,29 @@ extension ViewController: UICollectionViewDataSource {
             fatalError()
         }
         let narutoCard = ninjas[indexPath.row]
+        cell.narutoImage.image = nil 
         let imageURL = narutoCard.imageURL
         
         cell.narutoImage.getImage(with: imageURL) { (result) in
             switch result {
             case .failure( _):
+                DispatchQueue.main.async {
                 cell.narutoImage.image = UIImage(named: "person.fill")
+                }
             case .success(let image1):
-                cell.narutoImage.image = image1
+                DispatchQueue.main.async {
+                    cell.narutoImage.image = image1
+                }
             }
         }
         return cell
     }
-    
-    
 }
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: (collectionView.bounds.width - 5) / 2, height: (collectionView.bounds.width / 1.5))
+    }
+}
+
 
