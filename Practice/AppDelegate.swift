@@ -13,16 +13,13 @@ import AVFoundation
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var audioPlayer = AVAudioPlayer()
-    var duration = TimeInterval()
     
-
     func playSound(file:String, ext:String) -> Void {
         do {
-            let sound = Bundle.main.path(forResource: "joker_laugh", ofType: "mp3")
+            let sound = Bundle.main.path(forResource: "woo", ofType: "mp3")
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
             audioPlayer.prepareToPlay()
             audioPlayer.play()
-            audioPlayer.currentTime = 1.8
         } catch {
             fatalError()
         }
@@ -30,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        playSound(file: "joker_laugh", ext: "mp3")
+        playSound(file: "woo", ext: "mp3")
         // Override point for customization after application launch.
         return true
     }

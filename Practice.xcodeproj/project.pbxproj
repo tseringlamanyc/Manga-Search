@@ -21,6 +21,7 @@
 		5242EA3323B2CA9B000B7E39 /* ImageExtension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2F23B2CA9B000B7E39 /* ImageExtension .swift */; };
 		5242EA3623B2D0C3000B7E39 /* Champions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA3523B2D0C3000B7E39 /* Champions.swift */; };
 		5242EA3923B2D0DC000B7E39 /* LeagueAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA3823B2D0DC000B7E39 /* LeagueAPI.swift */; };
+		5242EA3B23B2D475000B7E39 /* woo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5242EA3A23B2D475000B7E39 /* woo.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		5242EA2F23B2CA9B000B7E39 /* ImageExtension .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ImageExtension .swift"; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/ImageExtension .swift"; sourceTree = "<group>"; };
 		5242EA3523B2D0C3000B7E39 /* Champions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champions.swift; sourceTree = "<group>"; };
 		5242EA3823B2D0DC000B7E39 /* LeagueAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueAPI.swift; sourceTree = "<group>"; };
+		5242EA3A23B2D475000B7E39 /* woo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = woo.mp3; path = ../../Images/woo.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				5202C62E23B2C2FE005AA3F1 /* joker_laugh.mp3 */,
+				5242EA3A23B2D475000B7E39 /* woo.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			files = (
 				5202C62F23B2C2FE005AA3F1 /* joker_laugh.mp3 in Resources */,
 				5202C62323B2C200005AA3F1 /* LaunchScreen.storyboard in Resources */,
+				5242EA3B23B2D475000B7E39 /* woo.mp3 in Resources */,
 				5202C62023B2C200005AA3F1 /* Assets.xcassets in Resources */,
 				5202C61E23B2C200005AA3F1 /* Main.storyboard in Resources */,
 			);

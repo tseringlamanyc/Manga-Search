@@ -8,6 +8,20 @@
 
 import Foundation
 
-struct Champion {
-  
+struct LeagueAPI {
+    
+    static func getChampions(completionHandler: @escaping (Result<Champions, AppError>) -> () ) {
+        
+        let leagueEndpoint = "https://ddragon.leagueoflegends.com/cdn/9.24.2/data/en_US/champion.json"
+        
+        guard let url = URL(string: leagueEndpoint) else {
+            completionHandler(.failure(.badURL(leagueEndpoint)))
+            return
+        }
+        
+        let request = URLRequest(url: url)
+        
+       print("Hello")
+        
+    }
 }
