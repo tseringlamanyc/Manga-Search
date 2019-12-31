@@ -15,22 +15,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var narutoSearch: UISearchBar!
     
     var audioPlayer = AVAudioPlayer()
-       
-       func playSound(file:String, ext:String) -> Void {
-           do {
-               let sound = Bundle.main.path(forResource: "opening", ofType: "mp3")
-               audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
-               audioPlayer.prepareToPlay()
-               audioPlayer.play()
-           } catch {
-               fatalError()
-           }
-       }
+    
+    func playSound(file:String, ext:String) -> Void {
+        do {
+            let sound = Bundle.main.path(forResource: "opening", ofType: "mp3")
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+            audioPlayer.prepareToPlay()
+            audioPlayer.play()
+        } catch {
+            fatalError()
+        }
+    }
     
     var ninjas = [Ninjas]() {
         didSet {
             DispatchQueue.main.async {
-            self.narutoCV.reloadData()
+                self.narutoCV.reloadData()
             }
         }
     }
@@ -76,7 +76,7 @@ extension ViewController: UICollectionViewDataSource {
             switch result {
             case .failure( _):
                 DispatchQueue.main.async {
-                cell.narutoImage.image = UIImage(named: "person.fill")
+                    cell.narutoImage.image = UIImage(named: "person.fill")
                 }
             case .success(let image1):
                 DispatchQueue.main.async {
