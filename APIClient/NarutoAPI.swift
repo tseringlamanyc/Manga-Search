@@ -10,7 +10,7 @@ import Foundation
 
 struct NarutoAPI {
     
-    static func getChampions(completionHandler: @escaping (Result<[Ninjas], AppError>) -> () ) {
+    static func getNinjas(completionHandler: @escaping (Result<[Ninjas], AppError>) -> () ) {
         
         let narutoEndpoint = "https://api.jikan.moe/v3/manga/11/characters"
         
@@ -23,11 +23,16 @@ struct NarutoAPI {
         
         NetworkHelper.shared.performDataTask(with: request) { (result) in
             switch result {
-                case .success(<#T##Data#>)
+            case .failure(let appError):
+                completionHandler(.failure(.networkClientError(appError)))
+            case .success(let data):
+                do {
+                    let narutoArr = try JSONDecoder().decode([Ninjas].self, from: data)
+                    completionHandler(.success(narutoArr))
+                } catch {
+                    completionHandler(.failure(.decodingError(error)))
+                }
             }
         }
-        
-      
-        
     }
 }
