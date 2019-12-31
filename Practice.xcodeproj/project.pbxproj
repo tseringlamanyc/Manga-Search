@@ -14,6 +14,7 @@
 		5202C62023B2C200005AA3F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5202C61F23B2C200005AA3F1 /* Assets.xcassets */; };
 		5202C62323B2C200005AA3F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5202C62123B2C200005AA3F1 /* LaunchScreen.storyboard */; };
 		5202C62C23B2C245005AA3F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5202C62B23B2C245005AA3F1 /* AVFoundation.framework */; };
+		522F9F8B23BB1399007B0A93 /* naruto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 522F9F8A23BB1399007B0A93 /* naruto.mp3 */; };
 		5242EA3023B2CA9B000B7E39 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2C23B2CA9B000B7E39 /* AppError.swift */; };
 		5242EA3123B2CA9B000B7E39 /* AlertFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2D23B2CA9B000B7E39 /* AlertFile.swift */; };
 		5242EA3223B2CA9B000B7E39 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2E23B2CA9B000B7E39 /* URLSession.swift */; };
@@ -33,6 +34,7 @@
 		5202C62223B2C200005AA3F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5202C62423B2C200005AA3F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5202C62B23B2C245005AA3F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		522F9F8A23BB1399007B0A93 /* naruto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = naruto.mp3; path = ../../Images/naruto.mp3; sourceTree = "<group>"; };
 		5242EA2C23B2CA9B000B7E39 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppError.swift; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/AppError.swift"; sourceTree = "<group>"; };
 		5242EA2D23B2CA9B000B7E39 /* AlertFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertFile.swift; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/AlertFile.swift"; sourceTree = "<group>"; };
 		5242EA2E23B2CA9B000B7E39 /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLSession.swift; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/URLSession.swift"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		5202C62D23B2C2EC005AA3F1 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				522F9F8A23BB1399007B0A93 /* naruto.mp3 */,
 				5242EA3A23B2D475000B7E39 /* woo.mp3 */,
 			);
 			path = Sounds;
@@ -193,6 +196,7 @@
 				5202C62323B2C200005AA3F1 /* LaunchScreen.storyboard in Resources */,
 				5242EA3B23B2D475000B7E39 /* woo.mp3 in Resources */,
 				5202C62023B2C200005AA3F1 /* Assets.xcassets in Resources */,
+				522F9F8B23BB1399007B0A93 /* naruto.mp3 in Resources */,
 				5202C61E23B2C200005AA3F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

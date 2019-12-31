@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func playSound(file:String, ext:String) -> Void {
         do {
-            let sound = Bundle.main.path(forResource: "woo", ofType: "mp3")
+            let sound = Bundle.main.path(forResource: "naruto", ofType: "mp3")
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
             audioPlayer.prepareToPlay()
             audioPlayer.play()
@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        playSound(file: "woo", ext: "mp3")
+        playSound(file: "naruto", ext: "mp3")
         // Override point for customization after application launch.
         return true
     }

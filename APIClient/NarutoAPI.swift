@@ -21,6 +21,12 @@ struct NarutoAPI {
         
         let request = URLRequest(url: url)
         
+        NetworkHelper.shared.performDataTask(with: request) { (result) in
+            switch result {
+                case .success(<#T##Data#>)
+            }
+        }
+        
       
         
     }
