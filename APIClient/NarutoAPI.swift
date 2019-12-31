@@ -27,7 +27,13 @@ struct NarutoAPI {
                 completionHandler(.failure(.networkClientError(appError)))
             case .success(let data):
                 do {
-                    let narutoArr = try JSONDecoder().decode([Ninjas].self, from: data)
+                    let narutoData = try JSONDecoder().decode(Naruto.self, from: data)
+                    var narutoArr = [Ninjas]()
+                    let narutoNinjas = narutoData.characters
+                    
+                    for ninjas in narutoNinjas {
+                        narutoArr.append(ninjas)
+                    }
                     completionHandler(.success(narutoArr))
                 } catch {
                     completionHandler(.failure(.decodingError(error)))

@@ -46,8 +46,16 @@ extension ViewController: UICollectionViewDataSource {
             fatalError()
         }
         let narutoCard = ninjas[indexPath.row]
+        let imageURL = narutoCard.imageURL
         
-        
+        cell.narutoImage.getImage(with: imageURL) { (result) in
+            switch result {
+            case .failure( _):
+                cell.narutoImage.image = UIImage(named: "person.fill")
+            case .success(let image1):
+                cell.narutoImage.image = image1
+            }
+        }
         return cell
     }
     
