@@ -49,7 +49,8 @@ extension ViewController: UICollectionViewDataSource {
             fatalError()
         }
         let narutoCard = ninjas[indexPath.row]
-        cell.narutoImage.image = nil 
+        cell.narutoImage.image = nil
+        cell.ninjasName.text = narutoCard.name
         let imageURL = narutoCard.imageURL
         
         cell.narutoImage.getImage(with: imageURL) { (result) in
@@ -70,7 +71,7 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (collectionView.bounds.width - 5) / 2, height: (collectionView.bounds.width / 1.5))
+        return CGSize(width: (collectionView.bounds.width), height: 336)
     }
 }
 

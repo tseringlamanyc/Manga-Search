@@ -35,23 +35,32 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="chn-7d-xF7">
-                                                    <rect key="frame" x="0.0" y="0.0" width="336" height="727"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="336" height="629"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="727" id="MXw-HN-mSF"/>
-                                                        <constraint firstAttribute="width" constant="336" id="pfQ-D5-CVm"/>
+                                                        <constraint firstAttribute="width" constant="336" id="y3Z-xQ-P2f"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmE-IK-n31">
+                                                    <rect key="frame" x="147" y="653" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="chn-7d-xF7" secondAttribute="bottom" id="IZb-aY-DKB"/>
-                                                <constraint firstItem="chn-7d-xF7" firstAttribute="leading" secondItem="J4M-Sb-DV0" secondAttribute="leading" id="XmH-al-BFE"/>
-                                                <constraint firstItem="chn-7d-xF7" firstAttribute="top" secondItem="J4M-Sb-DV0" secondAttribute="top" id="ike-gc-OMp"/>
-                                                <constraint firstAttribute="trailing" secondItem="chn-7d-xF7" secondAttribute="trailing" id="nD0-OG-r8d"/>
+                                                <constraint firstItem="zmE-IK-n31" firstAttribute="leading" secondItem="J4M-Sb-DV0" secondAttribute="leading" constant="20" id="0t3-x4-1xX"/>
+                                                <constraint firstAttribute="bottom" secondItem="zmE-IK-n31" secondAttribute="bottom" constant="53" id="6C5-cu-2km"/>
+                                                <constraint firstAttribute="trailing" secondItem="chn-7d-xF7" secondAttribute="trailing" id="8Uq-EW-fq0"/>
+                                                <constraint firstItem="chn-7d-xF7" firstAttribute="leading" secondItem="J4M-Sb-DV0" secondAttribute="leading" id="LNc-Uw-Xzs"/>
+                                                <constraint firstItem="zmE-IK-n31" firstAttribute="top" secondItem="chn-7d-xF7" secondAttribute="bottom" constant="24" id="Mqw-0I-bak"/>
+                                                <constraint firstAttribute="trailing" secondItem="zmE-IK-n31" secondAttribute="trailing" constant="20" id="aJv-LH-A6E"/>
+                                                <constraint firstItem="chn-7d-xF7" firstAttribute="top" secondItem="J4M-Sb-DV0" secondAttribute="top" id="f9q-az-faF"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="336" height="727"/>
                                         <connections>
                                             <outlet property="narutoImage" destination="chn-7d-xF7" id="5at-9l-KpD"/>
+                                            <outlet property="ninjasName" destination="zmE-IK-n31" id="5lX-MG-fHg"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
