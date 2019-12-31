@@ -7,24 +7,43 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
     @IBOutlet var narutoCV: UICollectionView!
-
+    @IBOutlet weak var narutoSearch: UISearchBar!
+    
+    var audioPlayer = AVAudioPlayer()
+       
+       func playSound(file:String, ext:String) -> Void {
+           do {
+               let sound = Bundle.main.path(forResource: "opening", ofType: "mp3")
+               audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+               audioPlayer.prepareToPlay()
+               audioPlayer.play()
+           } catch {
+               fatalError()
+           }
+       }
+    
     var ninjas = [Ninjas]() {
         didSet {
             DispatchQueue.main.async {
-                self.narutoCV.reloadData()
+            self.narutoCV.reloadData()
             }
         }
     }
+    
+    var currentSearch = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
         narutoCV.delegate = self
+        narutoSearch.delegate = self 
         narutoCV.dataSource = self
+        playSound(file: "opening", ext: "mp3")
     }
     
     func loadData() {
@@ -71,8 +90,12 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (collectionView.bounds.width), height: 336)
+        return CGSize(width: 336, height: 629)
     }
+}
+
+extension ViewController: UISearchBarDelegate {
+    
 }
 
 
