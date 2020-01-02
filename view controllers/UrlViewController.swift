@@ -12,21 +12,22 @@ import SafariServices
 class UrlViewController: UIViewController {
     
     var ninjas2: Ninjas!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        showWebsite()
     }
     
-    
-    @IBAction func showWebsite(_ sender: UIButton) {
+    func showWebsite() {
         guard let url = URL(string: ninjas2.url) else {
-                return
-            }
-            let safariVC = SFSafariViewController(url: url)
-            present(safariVC, animated: true, completion: nil)
-            safariVC.delegate = self
+            return
         }
+        let safariVC = SFSafariViewController(url: url)
+        present(safariVC, animated: true, completion: nil)
+        safariVC.delegate = self
     }
+    
+}
 
 extension UrlViewController: SFSafariViewControllerDelegate {
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {

@@ -56,6 +56,7 @@ class ViewController: UIViewController {
         narutoSearch.delegate = self
         narutoCV.delegate = self
         narutoCV.dataSource = self
+        title = "Tap on the picture to show more info"
        // playSound(file: "opening", ext: "mp3")
     }
     
