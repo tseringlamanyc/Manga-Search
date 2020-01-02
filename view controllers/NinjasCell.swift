@@ -11,6 +11,4 @@ import UIKit
 class NinjasCell: UICollectionViewCell {
     @IBOutlet weak var narutoImage: UIImageView!
     @IBOutlet weak var ninjasName: UILabel!
-    
-    @IBOutlet weak var linkButton: UIButton!
 }

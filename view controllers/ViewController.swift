@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         narutoSearch.delegate = self
         narutoCV.delegate = self
         narutoCV.dataSource = self
-        playSound(file: "opening", ext: "mp3")
+       // playSound(file: "opening", ext: "mp3")
     }
     
     func loadData(userNum: Int) {
@@ -68,6 +68,13 @@ class ViewController: UIViewController {
                 self?.ninjas = ninjas
             }
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let safariVC = segue.destination as? UrlViewController, let indexpath = narutoCV.indexPathsForSelectedItems?.first else {
+            fatalError()
+        }
+        safariVC.ninjas2 = ninjas[indexpath.row]
     }
 }
 
