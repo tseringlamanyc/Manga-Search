@@ -71,7 +71,7 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let safariVC = segue.destination as? UrlViewController, let indexpath = narutoCV.indexPathsForSelectedItems?.first else {
+        guard let safariVC = segue.destination as? UrlViewController, let indexpath = narutoCV.indexPathsForSelectedItems!.first else {
             fatalError()
         }
         safariVC.ninjas2 = ninjas[indexpath.row]
