@@ -45,6 +45,13 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kz-9M-Yoc">
+                                                    <rect key="frame" x="153" y="682" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Link">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="zmE-IK-n31" firstAttribute="leading" secondItem="J4M-Sb-DV0" secondAttribute="leading" constant="20" id="0t3-x4-1xX"/>
@@ -58,6 +65,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="336" height="727"/>
                                         <connections>
+                                            <outlet property="linkButton" destination="4kz-9M-Yoc" id="d7H-Rl-OAI"/>
                                             <outlet property="narutoImage" destination="chn-7d-xF7" id="5at-9l-KpD"/>
                                             <outlet property="ninjasName" destination="zmE-IK-n31" id="5lX-MG-fHg"/>
                                             <segue destination="Gaf-nR-Vf7" kind="show" id="Km2-hR-FyO"/>

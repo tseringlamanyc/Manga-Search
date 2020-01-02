@@ -109,7 +109,6 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 
 extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        searchBar.resignFirstResponder()
         currentManga = searchBar.text!
     }
 }
