@@ -65,12 +65,13 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="IP7-my-yWT">
+                            <searchBar contentMode="redraw" barStyle="black" placeholder="Search by number" translatesAutoresizingMaskIntoConstraints="NO" id="IP7-my-yWT">
                                 <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="e13-pN-X8b" firstAttribute="top" secondItem="IP7-my-yWT" secondAttribute="bottom" id="Edu-Go-0lQ"/>
                             <constraint firstItem="IP7-my-yWT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XNi-7K-MTB"/>
