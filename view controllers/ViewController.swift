@@ -91,7 +91,7 @@ extension ViewController: UICollectionViewDataSource {
         }
         let narutoCard = ninjas[indexPath.row]
         cell.narutoImage.image = nil
-        cell.ninjasName.text = narutoCard.name
+        cell.ninjasName.text = "\(narutoCard.name) - \(narutoCard.role)"
         let imageURL = narutoCard.imageURL
         
         cell.narutoImage.getImage(with: imageURL) { (result) in
