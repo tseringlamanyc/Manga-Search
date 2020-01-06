@@ -15,10 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var narutoSearch: UISearchBar!
     
     var audioPlayer = AVAudioPlayer()
-    
+
     func playSound(file:String, ext:String) -> Void {
         do {
-            let sound = Bundle.main.path(forResource: "opening", ofType: "mp3")
+            let sound = Bundle.main.path(forResource: "ting", ofType: "mp3")
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
             audioPlayer.prepareToPlay()
             audioPlayer.play()
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         narutoCV.delegate = self
         narutoCV.dataSource = self
         title = "Tap on the picture to show more info"
-       // playSound(file: "opening", ext: "mp3")
+        //playSound(file: "opening", ext: "mp3")
     }
     
     func loadData(userNum: Int) {
@@ -75,6 +75,7 @@ class ViewController: UIViewController {
         guard let safariVC = segue.destination as? UrlViewController, let indexpath = narutoCV.indexPathsForSelectedItems!.first else {
             fatalError()
         }
+        playSound(file: "ting", ext: "mp3")
         safariVC.ninjas2 = ninjas[indexpath.row]
     }
 }

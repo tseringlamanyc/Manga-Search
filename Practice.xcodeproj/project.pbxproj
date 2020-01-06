@@ -15,9 +15,9 @@
 		5202C62323B2C200005AA3F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5202C62123B2C200005AA3F1 /* LaunchScreen.storyboard */; };
 		5202C62C23B2C245005AA3F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5202C62B23B2C245005AA3F1 /* AVFoundation.framework */; };
 		521224D223BBCAE500EF9FF1 /* NinjasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521224D123BBCAE500EF9FF1 /* NinjasCell.swift */; };
-		521224D423BBE4FB00EF9FF1 /* opening.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 521224D323BBE4FB00EF9FF1 /* opening.mp3 */; };
 		521224D623BDB09900EF9FF1 /* UrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521224D523BDB09900EF9FF1 /* UrlViewController.swift */; };
-		522F9F8B23BB1399007B0A93 /* naruto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 522F9F8A23BB1399007B0A93 /* naruto.mp3 */; };
+		5222D74723C2BF370082C640 /* ting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5222D74623C2BF370082C640 /* ting.mp3 */; };
+		5222D74923C2BFF70082C640 /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5222D74823C2BFF70082C640 /* start.mp3 */; };
 		5242EA3023B2CA9B000B7E39 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2C23B2CA9B000B7E39 /* AppError.swift */; };
 		5242EA3123B2CA9B000B7E39 /* AlertFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2D23B2CA9B000B7E39 /* AlertFile.swift */; };
 		5242EA3223B2CA9B000B7E39 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5242EA2E23B2CA9B000B7E39 /* URLSession.swift */; };
@@ -37,9 +37,9 @@
 		5202C62423B2C200005AA3F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5202C62B23B2C245005AA3F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		521224D123BBCAE500EF9FF1 /* NinjasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjasCell.swift; sourceTree = "<group>"; };
-		521224D323BBE4FB00EF9FF1 /* opening.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = opening.mp3; path = ../../Images/opening.mp3; sourceTree = "<group>"; };
 		521224D523BDB09900EF9FF1 /* UrlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlViewController.swift; sourceTree = "<group>"; };
-		522F9F8A23BB1399007B0A93 /* naruto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = naruto.mp3; path = ../../Images/naruto.mp3; sourceTree = "<group>"; };
+		5222D74623C2BF370082C640 /* ting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ting.mp3; path = ../../Images/ting.mp3; sourceTree = "<group>"; };
+		5222D74823C2BFF70082C640 /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = start.mp3; path = ../../Images/start.mp3; sourceTree = "<group>"; };
 		5242EA2C23B2CA9B000B7E39 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppError.swift; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/AppError.swift"; sourceTree = "<group>"; };
 		5242EA2D23B2CA9B000B7E39 /* AlertFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertFile.swift; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/AlertFile.swift"; sourceTree = "<group>"; };
 		5242EA2E23B2CA9B000B7E39 /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLSession.swift; path = "../../Pursuit-Core-iOS-Unit3-Final/Elements/Helpers/URLSession.swift"; sourceTree = "<group>"; };
@@ -106,8 +106,8 @@
 		5202C62D23B2C2EC005AA3F1 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				521224D323BBE4FB00EF9FF1 /* opening.mp3 */,
-				522F9F8A23BB1399007B0A93 /* naruto.mp3 */,
+				5222D74823C2BFF70082C640 /* start.mp3 */,
+				5222D74623C2BF370082C640 /* ting.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -209,8 +209,8 @@
 			files = (
 				5202C62323B2C200005AA3F1 /* LaunchScreen.storyboard in Resources */,
 				5202C62023B2C200005AA3F1 /* Assets.xcassets in Resources */,
-				521224D423BBE4FB00EF9FF1 /* opening.mp3 in Resources */,
-				522F9F8B23BB1399007B0A93 /* naruto.mp3 in Resources */,
+				5222D74723C2BF370082C640 /* ting.mp3 in Resources */,
+				5222D74923C2BFF70082C640 /* start.mp3 in Resources */,
 				5202C61E23B2C200005AA3F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
