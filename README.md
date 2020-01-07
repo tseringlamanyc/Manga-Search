@@ -6,9 +6,13 @@ This is a collection View app that allows the user to search manga / anime chara
 
 Additionally there is a safari view when the user clicks on the characters image which transitions into a safari web page with additional character information.
 
+![Initial screen with default character including the search bar](Assets/webpage.png)
+
 ```swift 
   
   add code here 
 
 ```
 
+## Gif 
+![gif](Assets/gif)
