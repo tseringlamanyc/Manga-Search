@@ -12,3 +12,5 @@ Additionally there is a safari view when the user clicks on the characters image
 
 ```
 
+## Gif 
+![gif](Assets/gif)
