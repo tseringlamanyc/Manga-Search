@@ -12,4 +12,4 @@ Additionally there is a safari view when the user clicks on the characters image
 
 ## Screenshot 
 
-![Initial screen with default character including the search bar](Assests/homescreen.png)
+![Initial screen with default character including the search bar](Assets/homescreen.png)
