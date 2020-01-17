@@ -47,6 +47,7 @@ class ViewController: UIViewController {
                     }
                 }
             }
+            UserPreference.shared.updateDefaults(value: currentManga, key: UserKey.search)
         }
     }
     
@@ -57,6 +58,7 @@ class ViewController: UIViewController {
         narutoCV.delegate = self
         narutoCV.dataSource = self
         title = "Tap on the picture to show more info"
+        updateUI()
         //playSound(file: "opening", ext: "mp3")
     }
     
@@ -69,6 +71,11 @@ class ViewController: UIViewController {
                 self?.ninjas = ninjas
             }
         }
+    }
+    
+    private func updateUI() {
+        let mangaStr : String = UserPreference.shared.getDefaults(key: UserKey.search) ?? ""
+        currentManga = mangaStr
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
